@@ -40,13 +40,13 @@ if (transferForm) {
     const targetAccount = document.getElementById('targetAccount').value.trim();
     const transferAmount = document.getElementById('transferAmount').value.trim();
 
-    if (sourceAccount && sourceAccount.length < 7) {
-      showNotice('Tài khoản nguồn phải có ít nhất 7 ký tự.', document.getElementById('sourceAccount'));
+    if (sourceAccount && sourceAccount.length < 4) {
+      showNotice('Tài khoản nguồn phải có ít nhất 4 ký tự.', document.getElementById('sourceAccount'));
       return;
     }
 
-    if (targetAccount && targetAccount.length < 7) {
-      showNotice('Tài khoản đến phải có ít nhất 7 ký tự.', document.getElementById('targetAccount'));
+    if (targetAccount && targetAccount.length < 4) {
+      showNotice('Tài khoản đến phải có ít nhất 4 ký tự.', document.getElementById('targetAccount'));
       return;
     }
 
